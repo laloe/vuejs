@@ -5,7 +5,7 @@ const h1 = document.querySelector('h1');
 input.addEventListener('keyup', () => h1.innerHTML = input.value); */
 
 //Vue.js
-
+0
 const vm = new Vue({
     el: 'main',
     data: {
@@ -16,5 +16,10 @@ const vm = new Vue({
             {nombre: 'Estudiar', prioridad: 'media'},
             {nombre: 'Ir al centro', prioridad: 'baja'},
         ],
+        persona: {
+            nombre: 'Lalo',
+            profesion: 'dev',
+            ciudad: 'Aguascalientes'
+        }
     }
 });
