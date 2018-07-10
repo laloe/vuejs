@@ -6,9 +6,15 @@ input.addEventListener('keyup', () => h1.innerHTML = input.value); */
 
 //Vue.js
 
-new Vue({
+const vm = new Vue({
     el: 'main',
     data: {
-        mensaje: 'Hola mundo',
+        conectado: false,
+        mensaje: 'hola',
+        laborales: ['Lunes','Martes','Miercoles','Jueves','Viernes'],
+        tareas: [{nombre: 'Hacer algo', prioridad: 'alta'},
+            {nombre: 'Estudiar', prioridad: 'media'},
+            {nombre: 'Ir al centro', prioridad: 'baja'},
+        ],
     }
 });
